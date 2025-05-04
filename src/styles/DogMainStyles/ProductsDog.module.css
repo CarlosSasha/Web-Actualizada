@@ -1,0 +1,278 @@
+.Principal {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 2rem;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+/*Para no dejar espacio a los lados*/
+@media (min-width: 1024px) {
+  .Principal {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+.carrusel {
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.carruselImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.mercadito {
+  display: flex;
+  gap: 3rem;
+  /*gap: 2rem;*/
+  margin-top: 2rem;
+}
+
+.aside {
+  width: 250px;
+  flex-shrink: 0;
+  background: #66bb6a;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+}
+
+.menu {
+  list-style: none;
+}
+
+.menuLi {
+  margin-bottom: 1rem;
+}
+
+.botonMenu {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: #4caf50;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  color: white;
+}
+
+.botonMenuHover,
+.botonMenuActive {
+  background: white;
+  color: #66bb6a;
+}
+
+.botonMenuIcon {
+  font-size: 1.2rem;
+}
+
+.tituloPrincipal {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+}
+
+.contenedorProductos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.producto {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.productoHover {
+  transform: translateY(-5px);
+}
+
+.productoImagen {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.productoDetalles {
+  padding: 1rem;
+}
+
+.productoTitulo {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.productoPrecio {
+  font-weight: bold;
+  color: #27ae60;
+  margin-bottom: 1rem;
+}
+
+.productoAgregar {
+  background: #66bb6a;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.productoAgregarHover {
+  background: #2c3e50;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .mercadito {
+    flex-direction: column;
+  }
+
+  .aside {
+    width: 100%;
+  }
+
+  .carrusel {
+    height: 250px;
+  }
+
+  .tituloPrincipal {
+    font-size: 1.5rem;
+  }
+}
+/* Menú lateral (aside) */
+aside {
+  width: 250px;
+  /*background: #fff;*/
+  background: #66bb6a;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+}
+
+.menu {
+  list-style: none;
+}
+
+.menu li {
+  margin-bottom: 1rem;
+}
+
+.boton-menu {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: #4caf50;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.boton-menu:hover,
+.boton-menu.active {
+  background: white;
+  color: #66bb6a;
+}
+
+.boton-menu i {
+  font-size: 1.2rem;
+}
+
+/* Título principal */
+.titulo-principal {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+}
+
+/* Grid de productos */
+.contenedor-productos-dog {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.producto {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+}
+
+.producto-imagen {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.producto-agregar {
+  background: #66bb6a;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.producto-agregar:hover {
+  background: #2c3e50;
+  color: white;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .mercadito {
+    flex-direction: column;
+  }
+
+  aside {
+    width: 100%;
+  }
+
+  .carrusel {
+    height: 250px;
+  }
+
+  .titulo-principal {
+    font-size: 1.5rem;
+  }
+}

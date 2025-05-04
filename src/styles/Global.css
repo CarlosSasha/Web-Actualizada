@@ -1,0 +1,56 @@
+/* Global.css */
+/* Importar la fuente Inter desde Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Marvel:ital,wght@0,400;0,700;1,400;1,700&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap");
+
+/* Importar Slick Carousel CSS */
+@import url("//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css");
+@import url("//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css");
+
+/* Importar Tailwind CSS (si es necesario) */
+@import "tailwindcss";
+
+/* Estilos globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Marvel", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+body {
+  background-color: #fff2e2;
+  color: #333;
+  line-height: 1.6;
+  font-size: 17px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #222;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
